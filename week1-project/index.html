@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Series</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/static/images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Dark</div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>            
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#episodes">Episodes</a></li>
+                <li><a href="#favorite-scene">Favorite Scene</a></li>
+            </ul>
+            <div class="profile-icon"></div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1><a href="https://www.imdb.com/title/tt5753856/" target="_blank">DARK</a></h1>
+        <p>Dark is a mysterious sci-fi series set in the town of Winden, Germany, involving time travel and family secrets.</p>
+        <p>The story follows four interconnected families as they uncover a time travel conspiracy that spans several generations. As the truth unravels, they discover how their destinies are intertwined in a never-ending cycle.</p>
+    </section>
+    
+    <section id="characters" class="characters-section">
+        <h2 class="section-title">Characters</h2>
+        <div class="character-cards">
+            <div class="character-card">
+                <a href="https://m.imdb.com/title/tt5753856/characters/nm3836977/?ref_=tt_mv_close" target="_blank">
+                    <img src="static/images/jonas.jpg" alt="Jonas Kahnwald">
+                </a>
+                <p>Jonas Kahnwald: The main character trying to break the time loop.</p>
+            </div>
+            <div class="character-card">
+                <a href="https://m.imdb.com/title/tt5753856/characters/nm3582197/?ref_=tt_cst_c_3" target="_blank">
+                    <img src="static/images/martha.png" alt="Martha Nielsen">
+                </a>
+                <p>Martha Nielsen: Jonas' love interest and key to alternate realities.</p>
+            </div>
+            <div class="character-card">
+                <a href="https://www.imdb.com/title/tt5753856/characters/nm7005890" target="_blank">
+                    <img src="static/images/noah.jpg" alt="Noah">
+                </a>
+                <p>Noah: A mysterious figure on the dark side of time travel.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="episodes" class="episodes-section">
+        <h2 class="section-title">Episodes</h2>
+        <div class="episode">
+            <h3>1. Season 1, Episode 10 - "Alpha and Omega"</h3>
+            <p>The season finale reveals the first major time loop and how Jonas tries to stop it but actually causes the apocalypse. It sets the stage for deeper mysteries.</p>
+        </div>
+        <div class="episode">
+            <h3>2. Season 2, Episode 6 - "An Endless Cycle"</h3>
+            <p>Jonas returns to 2019 and tries to change the past by stopping Michael from committing suicide. However, he learns that everything must happen as it always did.</p>
+        </div>
+        <div class="episode">
+            <h3>3. Season 2, Episode 8 - "Endings and Beginnings"</h3>
+            <p>The apocalypse finally happens, and a new mystery is introduced—the parallel world. Martha from another world appears, shocking Jonas and viewers.</p>
+        </div>
+        <div class="episode">
+            <h3>4. Season 3, Episode 7 - "Between the Time"</h3>
+            <p>The episode explains how different versions of Jonas and Martha try to fix the time loop. Claudia also plays a major role in discovering the truth.</p>
+        </div>
+        <div class="episode">
+            <h3>5. Season 3, Episode 8 - "The Paradise"</h3>
+            <p>The series finale explains the origin of the time loops. Jonas and Martha make the ultimate sacrifice to break the cycle and restore a world without their existence.</p>
+        </div>
+    </section>
+    
+    
+    <section id="favorite-scene" class="favorite-scene container">
+        <h2 class="section-title">Favorite Scene</h2>
+        <div class="box">
+            <p>The scene where Jonas travels to the future is one of the most striking moments of the series.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ESEUoa-mz2c?si=DkU2QND5mXPJ3nT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 Esat Ozholcek</p>
+        <a href="https://www.linkedin.com/in/mahmut-esat-ozholcek/" target="_blank">LinkedIn</a>
+    </footer>
+</body>
+<script>
+    function toggleMenu() {
+        document.querySelector(".nav-list").classList.toggle("active");
+    }
+
+</script>
+</html>

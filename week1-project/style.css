@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #1e1e1e;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+.nav-list li a:hover {
+    color: #ffcc00;
+}
+
+.profile-icon {
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('static/images/account-circle.png') no-repeat center center/cover;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1e1e1e;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('static/images/background_1920x1080.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.characters-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.character-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.character-card {
+    width: 30%;
+    min-width: 250px;
+    background: #1e1e1e;
+    padding: 0;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 800px) {
+    .character-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .character-card {
+        width: 100%;
+    }
+}
+
+.character-card img {
+    width: 100%;
+    height: 280px; /* Sabit yükseklik belirleyin */
+    object-fit: cover; /* Resimlerin kırpılmasını sağlar, ancak aynı boyutta gösterir */
+    display: block;
+}
+
+
+.character-card p {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+}
+
+.episodes-section {
+    padding: 20px;
+}
+
+.episodes-section .episode {
+    background: #1e1e1e;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.favorite-scene iframe {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+.container {
+    padding: 20px;
+}
+
+.box {
+    background: #1e1e1e;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.box p {
+    padding: 10px;
+}
